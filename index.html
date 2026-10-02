@@ -3,43 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的作品集</title>
+  <title>陳侑恩｜特殊選材作品集</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- ===== 頁首 ===== -->
   <header>
     <h1>陳侑恩</h1>
-    <p>我很帥</p>
+    <p class="apply">申請校系：【國立台灣海洋大學　電機工程學系】</p>
     <button id="theme-btn">🌙 深色模式</button>
   </header>
 
-  <section>
-    <h2>關於我</h2>
-    <p>在這裡寫幾句你的背景和興趣。</p>
-  </section>
+  <!-- ===== 導覽列 ===== -->
+  <nav aria-label="頁面導覽">
+    <a href="#about">自傳</a>
+    <a href="#works">專題作品</a>
+    <a href="#others">其他有利審查資料</a>
+    <a href="#contact">聯絡方式</a>
+  </nav>
 
-  <section>
-    <h2>作品</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>智慧近海漁船監控與求救系統</h3>
-        <p>船端 ESP32-S3 讀取傾角與 GPS 定位，透過 ESP-NOW 無線傳到岸上指揮中心。岸上端具備聲光警報，並提供含地圖、CSV 匯出與中英雙語的網頁戰情介面。</p>
-        <p class="tags">使用技術：ESP32-S3、ESP-NOW、MPU6050、GPS、Leaflet</p>
-      </article>
+  <main>
 
-      <article class="card">
-        <h3>停車塔</h3>
-        <p>在這裡用一兩句話說明停車塔做了什麼。</p>
-        <p class="tags">使用技術：待補</p>
-      </article>
+    <!-- ===== 自傳 ===== -->
+    <section id="about">
+      <h2>自傳</h2>
 
-      <article class="card">
-        <h3>水冷致冷保冷箱</h3>
-        <p>以 TEC1-1206 致冷晶片搭配水冷排自製的保冷箱。ESP32 讀取溫度感測器，並用 MOSFET 的 PWM 調整致冷力道，也能透過 MQTT 遠端遙控。</p>
-        <p class="tags">使用技術：ESP32、TEC1-1206、MOSFET PWM、DS18B20、MQTT</p>
-      </article>
-    </div>
-  </section>
+      <h3>一、求學過程</h3>
+
+      <h4>(一) 動手做專題——與嵌入式系統的相遇</h4>
+      <p>【我是從什麼時候、因為什麼事開始接觸電子與程式的。第一個做出來的東西是什麼，當時的感覺。】<span class="hl">之後我陸續完成了以 ESP32 為核心的近海漁船監控與求救系統，以及用致冷晶片自製的水冷保冷箱</span>，從硬體接線、韌體程式到網頁介面都自己實作。</p>
+      <p>【在漁船系統中遇到的一個具體問題，例如原本想用 nRF24L01 傳輸，後來改用 ESP-NOW，說明你為什麼這樣取捨。】<span class="hl">我學到【這個經驗教會你的事】</span>，也讓我【想繼續學習的方向】。</p>
+
+      <h4>(二) 自主學習——與網頁及微控制器的相遇</h4>
+      <p>【為什麼想學網頁、什麼時候開始。】<span class="hl">我從零開始自學 HTML、CSS 與 JavaScript，並用 Git 與 GitHub 把這個作品集網站發布上線</span>，同時也開始學習 STM32 微控制器。【學習過程中最大的困難，以及你怎麼克服。】</p>
+
+      <h3>二、個人特質</h3>
+
+      <h4>(一) 【特質一，例如：主動自學】</h4>
+      <p>【一個具體事件。】<span class="hl">【這件事顯示出的特質。】</span></p>
+
+      <h4>(二) 【特質二，例如：解決問題】</h4>
+      <p>【一個具體事件。】<span class="hl">【這件事顯示出的特質。】</span></p>
+
+      <h4>(三) 【特質三，例如：合作負責】</h4>
+      <p>【一個具體事件。】<span class="hl">【這件事顯示出的特質。】</span></p>
+
+      <h3>三、申請動機</h3>
+
+      <h4>1. 目標和夢想</h4>
+      <p>【你想成為怎樣的人、想解決什麼問題，以及為什麼貴系是實現它的理想選擇。】</p>
+
+      <h4>2. 課程學習內容</h4>
+      <p>【貴系的哪些課程吸引你，這些課程與你做過的專題怎麼連結。】</p>
+
+      <h4>3. 未來生涯進路</h4>
+      <p>【貴系輔導的證照、實習或出路，與你的規劃有什麼關係。】</p>
+
+      <h4>4. 師資與學校資源</h4>
+      <p>【貴系的實驗室或老師的研究方向，你想參與什麼。】</p>
+
+      <h3>四、生涯規劃和讀書計畫</h3>
+
+      <h4>(一) 近程（入學前）——增強自身能力</h4>
+      <ul>
+        <li>【例如：完成停車塔專題，持續學習 STM32】</li>
+        <li>【補強的科目，例如數學、英文】</li>
+        <li>【參加貴系舉辦的活動或營隊】</li>
+      </ul>
+
+      <h4>(二) 中程（大學時期）</h4>
+      <ul>
+        <li><strong>大一～大二：</strong>【專業必修課程、社團、課外活動】</li>
+        <li><strong>大三～大四：</strong>【證照、專題、實習】</li>
+      </ul>
+
+      <h4>(三) 遠程（畢業後）</h4>
+      <ul>
+        <li>【想從事的工作，或繼續升學的方向】</li>
+      </ul>
+    </section>
+
+    <!-- ===== 專題作品（對應範例的「篩選條件」） ===== -->
+    <section id="works">
+      <h2>專題作品</h2>
+      <p>【一句話說明這些專題與申請科系的關聯。】</p>
+
+      <div class="cards">
+        <article class="card">
+          <!-- 有圖片時，把下一行的註解符號拿掉，並換成你的檔名
+          <img src="vessel.jpg" alt="漁船監控系統的網頁戰情介面">
+          -->
+          <h3>智慧近海漁船監控與求救系統</h3>
+          <p>船端 ESP32-S3 讀取傾角與 GPS 定位，透過 ESP-NOW 無線傳到岸上指揮中心。岸上端具備聲光警報，並提供含地圖、CSV 匯出與中英雙語的網頁戰情介面。</p>
+          <p class="tags">使用技術：ESP32-S3、ESP-NOW、MPU6050、GPS、Leaflet</p>
+        </article>
+
+        <article class="card">
+          <!--
+          <img src="parking.jpg" alt="停車塔專題的作品照片">
+          -->
+          <h3>停車塔</h3>
+          <p>【用一兩句話說明停車塔做了什麼。】</p>
+          <p class="tags">使用技術：【待補】</p>
+        </article>
+
+        <article class="card">
+          <!--
+          <img src="cooler.jpg" alt="水冷致冷保冷箱的成品照片">
+          -->
+          <h3>水冷致冷保冷箱</h3>
+          <p>以 TEC1-1206 致冷晶片搭配水冷排自製的保冷箱。ESP32 讀取溫度感測器，並用 MOSFET 的 PWM 調整致冷力道，也能透過 MQTT 遠端遙控。</p>
+          <p class="tags">使用技術：ESP32、TEC1-1206、MOSFET PWM、DS18B20、MQTT</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 其他有利審查資料 ===== -->
+    <section id="others">
+      <h2>其他有利審查資料</h2>
+      <!-- 提醒：公開網站上請遮掉學號、身分證字號、住址、電話、家長資料；成績單建議只放在正式送件的檔案裡 -->
+
+      <h3>1. 校外競賽與證照</h3>
+      <ul>
+        <li>【年度】【賽事名稱】【獲獎成績】</li>
+        <li>【沒有的話，整個小節可以刪掉】</li>
+      </ul>
+
+      <h3>2. 校內表現</h3>
+      <ul>
+        <li>【幹部經歷，例如擔任什麼職務、做了什麼】</li>
+        <li>【導師評語、獎勵紀錄】</li>
+      </ul>
+
+      <h3>3. 相關課程與自學紀錄</h3>
+      <ul>
+        <li>【校內相關課程與成績】</li>
+        <li><span class="hl">自學：</span>HTML、CSS、JavaScript、Git 與 GitHub Pages、STM32</li>
+      </ul>
+
+      <h3>4. 志工與社團服務</h3>
+      <ul>
+        <li>【時間、單位、服務內容與時數】</li>
+      </ul>
+    </section>
+
+    <!-- ===== 聯絡方式 ===== -->
+    <section id="contact">
+      <h2>聯絡方式</h2>
+      <ul>
+        <li>Email：【your@email.com】</li>
+        <li>GitHub：【你的 GitHub 網址】</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 陳侑恩　備審資料作品集</p>
+  </footer>
 
   <script>
     const btn = document.getElementById("theme-btn");
