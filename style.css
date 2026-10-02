@@ -10,17 +10,6 @@
   --hl: #c62828;
 }
 
-body.dark {
-  --bg: #121212;
-  --text: #eee;
-  --card: #1e1e1e;
-  --card-inner: #2b2024;
-  --muted: #aaa;
-  --accent: #e091a3;
-  --tag: #f0a3b5;
-  --hl: #ff8a80;
-}
-
 /* ===== 基本設定 ===== */
 html {
   scroll-behavior: smooth;
@@ -63,17 +52,6 @@ h1 {
 .apply {
   margin: 0 0 16px;
   color: var(--muted);
-}
-
-#theme-btn {
-  font: inherit;
-  font-size: 0.9rem;
-  padding: 6px 16px;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
 }
 
 /* ===== 導覽列 ===== */
